@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <p class="terms">By signing in you are agreeing <br> our <a href="#">Terms and privacy policy</a></p>
+            
+            <div class="tab">
+                <a href="#" class="active-tab" id="login-tab">Login</a>
+                <a href="./signup.html" id="register-tab">Register</a>
+            </div>
+            
+            <form id="login-form" class="form">
+                <div class="input-group">
+                    <label for="email"><i class="fa fa-envelope"></i></label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <label for="password"><i class="fa fa-lock"></i></label>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <i class="fa fa-eye" id="toggle-password"></i>
+                </div>
+                <div class="form-footer">
+                    <label><input type="checkbox"> Remember password</label>
+                    <a href="#">Forget password</a>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <form id="register-form" class="form hidden">
+                <div class="input-group">
+                    <label for="register-email"><i class="fa fa-envelope"></i></label>
+                    <input type="email" id="register-email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password"><i class="fa fa-lock"></i></label>
+                    <input type="password" id="register-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Register</button>
+            </form>
+
+            <div class="social-connect">
+                <p>or connect with</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="fingerprint">
+                <i class="fa fa-fingerprint"></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

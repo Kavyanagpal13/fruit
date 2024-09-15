@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <!-- Link to Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .phone {
+            width: 360px;
+            height: 720px;
+            background-color: #fff;
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .phone::before {
+            content: '';
+            width: 80px;
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .phone::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .app {
+            text-align: center;
+        }
+
+        .app-icon {
+            font-size: 50px; /* Adjust icon size */
+            color: #a67df8;
+            margin-bottom: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .text-content .highlight {
+            color: #a67df8;
+        }
+
+        .text-content p {
+            color: #aaa;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        /* Media Query for Laptop View */
+        @media (min-width: 768px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+
+            .phone {
+                width: 600px; /* Increase width for larger screens */
+                height: 800px; /* Increase height if needed */
+                border-radius: 20px; /* Adjust border-radius */
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+            }
+
+            .app-icon {
+                font-size: 80px; /* Larger icon size */
+            }
+
+            .text-content h1 {
+                font-size: 3rem; /* Larger text size */
+            }
+
+            .text-content p {
+                font-size: 1.25rem; /* Larger paragraph text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="app">
+            <!-- Font Awesome Chat Icon -->
+            <div class="app-icon">
+                <i class="fas fa-comments"></i>
+            </div>
+            
+            <!-- Text Content -->
+            <div class="text-content">
+                <h1>Hello <span class="highlight">Chat.</span></h1>
+                <p>The last chat app you'll ever need.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
